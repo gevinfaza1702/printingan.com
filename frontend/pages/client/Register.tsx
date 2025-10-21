@@ -7,7 +7,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import BrandLogo from "@/src/assets/brand-logo.png";
 import usePageMeta from "@/src/lib/usePageMeta";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ClientRegister() {
   usePageMeta({ title: "Daftar Client", brand: "Printingan.com" });
@@ -363,9 +363,9 @@ export default function ClientRegister() {
 
                 <p className="text-center text-sm text-slate-700">
                   Sudah punya akun?{" "}
-                  <a href="/client/login" className="font-semibold text-indigo-600 hover:underline">
+                  <Link to="/client/login" className="font-semibold text-indigo-600 hover:underline">
                     Masuk
-                  </a>
+                  </Link>
                 </p>
               </form>
             </CardContent>
