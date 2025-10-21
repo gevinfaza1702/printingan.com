@@ -15,6 +15,9 @@ export default defineConfig({
     },
   },
   plugins: [tailwindcss(), react()],
-  mode: "development",
-  build: { minify: false },
+  build: { 
+    outDir: "dist",
+    minify: true,
+    sourcemap: false
+  },
 });

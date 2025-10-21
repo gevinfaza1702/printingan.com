@@ -4,7 +4,9 @@
   "type": "module",
   "packageManager": "npm@9.6.7",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.15",

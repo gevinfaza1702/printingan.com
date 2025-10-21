@@ -2171,3 +2171,6 @@ app.post("/api/admin/invoice/login", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });
+
+// Export the app for Vercel
+module.exports = app;

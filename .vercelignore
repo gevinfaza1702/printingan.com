@@ -1,0 +1,10 @@
+node_modules
+.env.local
+.env.development
+.git
+*.log
+.DS_Store
+my-backend/data/app.sqlite
+my-backend/src/uploads/
+frontend/node_modules
+frontend/dist
